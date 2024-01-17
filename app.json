@@ -1,0 +1,81 @@
+{
+  "expo": {
+    "name": "Nizams",
+    "slug": "nizams",
+    "version": "1.3.1",
+    "jsEngine": "jsc",
+    "orientation": "portrait",
+    "icon": "./assets/nizams.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/nizamssplash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "extra": {
+      "API_FOR_GOOGLE_CLOUD": "AIzaSyCrc0QhxcdXDcPm5f5lmJhSrgbk_s5kgF8",
+      "eas": {
+        "projectId": "aa288e84-297f-4fe9-bec5-7721995f640d"
+      }
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/nizams.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.nizamsapp.nizams",
+      "versionCode": 34,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "nizams",
+    "ios": {
+      "bundleIdentifier": "com.nizamsapp.nizams",
+      "buildNumber": "32",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Nizam's Kathi Kabab use your camera for verification of specific user who pick-up order",
+        "NSLocationWhenInUseUsageDescription": "Nizam's Kathi Kabab app uses customers location, because when the customer is in a certain area of the store, the app will notify them about a special discounted offer.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Nizam's Kathi Kabab app uses customers location, because when the customer is in a certain area of the store, the app will notify them about a special discounted offer.",
+        "NSLocationAlwaysUsageDescription": "Nizam's Kathi Kabab app uses customers location, because when the customer is in a certain area of the store, the app will notify them about a special discounted offer.",
+        "NSUserTrackingUsageDescription": "This app collect data that can be used for the special discounted offer to get your attention",
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      }
+    },
+    "plugins": [
+      [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "This app collect data that can be used for the special discounted offer to get your attention"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/nizams.png",
+          "color": "#ffffff",
+          "sounds": [
+            "./assets/alert.mp3",
+            "./assets/other.wav"
+          ]
+        }
+      ]
+    ],
+    "owner": "keventers"
+  }
+}
